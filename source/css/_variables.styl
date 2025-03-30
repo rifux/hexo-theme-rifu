@@ -1,50 +1,55 @@
 // Colors
 :root
-  --red-0: #ff0000
-  --red-1: #ff5252
-  --red-2: #ff7c7c
-  --red-3: #ffafaf
-  --red-4: #ffd0d0
-  --red-5: #ffecec
-  --red-5-5: #fff3f3
-  --red-6: #fff7f7
+  /* Reds converted to dark magenta */
+  --red-0: #c13cd3;    /* Base magenta */
+  --red-1: #cb5bd9;    /* First light step */
+  --red-2: #d27adf;    /* Mid-light */
+  --red-3: #e099e5;    /* Balanced lightness */
+  --red-4: #eab8eb;    /* Soft pastel */
+  --red-5: #f4d7f1;    /* Very light */
+  --red-5-5: #f9e7f4;  /* Subtle tint */
+  --red-6: #fff7f7;    /* Near-white */
 
-  --grey-9: #888
+  /* Adjusted Neutrals */
+  --grey-9: #8c7a8f;    /* Desaturated magenta (original #888) */
   --grey-7: var(--color-default)
 
+  /* Contextual Colors */
   --color-archive-year: black
-  --color-default: #555
+  --color-default: #5d4d60;        /* Warm grey (original #555) */
   --color-border: var(--red-3)
   --color-link: var(--red-1)
-  --color-background: #eee
-  --color-code-background: #f8f8f8
-  --color-header-background: rgba(255, 255, 255, 0.9)
+  --color-background: #f5eef6;     /* Pale magenta tint */
+  --color-code-background: #f8f3f9; /* Warmer light gray */
+  --color-header-background: rgba(245, 238, 246, 0.9) /* Semi-transparent background */
   --color-footer-background: #fff
   --color-mobile-nav-background: #fff
   --color-wrap: #fff
   --color-sticky: #fff
 
+  /* Secondary Interface Colors */
   --color-h2-border: #eee
   --color-meta-shadow: var(--red-6)
-  --color-hover-shadow: rgba(120, 120, 120, 0.15)
+  --color-hover-shadow: rgba(193, 60, 211, 0.1)  /* Magenta-tinted shadow */
   --color-h2-after: var(--red-1)
-  --color-red-6-shadow: rgba(255, 78, 78, 0.6)
-  --color-red-3-shadow: rgba(255, 78, 78, 0.3)
+  --color-red-6-shadow: rgba(211, 78, 211, 0.6)
+  --color-red-3-shadow: rgba(211, 78, 211, 0.3)
 
-  --highlight-nav: #e6e6e6
-  --highlight-scrollbar: #d6d6d6
+  /* Adjusted Highlight Colors */
+  --highlight-nav: #ede2ef          /* Light magenta tint */
+  --highlight-scrollbar: #e0d0e3    /* Medium magenta tint */
   --highlight-background: #f7f7f7
-  --highlight-current-line: #dadada
-  --highlight-selection: #e9e9e9
-  --highlight-foreground: #4d4d4d
-  --highlight-comment: #7d7d7d
-  --highlight-red: #c8362b
-  --highlight-orange: #b66014
-  --highlight-yellow: #cb911d
-  --highlight-green: #2ea52e
-  --highlight-aqua: #479d9d
-  --highlight-blue: #1973b8
-  --highlight-purple: #7135ac
+  --highlight-current-line: #ead0ee /* Subtle magenta accent */
+  --highlight-selection: #f0e0f2
+  --highlight-foreground: #5d4d60   /* Matching --color-default */
+  --highlight-comment: #8c7a8f      /* Matching --grey-9 */
+  --highlight-red: #d93c6b;      /* Magenta-tinged red */
+  --highlight-orange: #cc5c3c;   /* Warm terracotta */
+  --highlight-yellow: #d3aa3c;   /* Golden yellow */
+  --highlight-green: #4d994d;    /* Muted sage green */
+  --highlight-aqua: #4d8d9d;     /* Dusty teal */
+  --highlight-blue: #6b8cd3;     /* Periwinkle blue */
+  --highlight-purple: #8c5bd9;   /* Violet sibling */
 
   --cursor-default: url(cursor-default), auto
   --cursor-pointer: url(cursor-pointer), pointer
@@ -55,39 +60,40 @@
 [data-theme="dark"]
   &:root
     --red-0: var(--red-1)
-    --red-4: rgba(255,208,208,0.5)
-    --red-5: rgba(255,228,228,0.15)
-    --red-5-5: rgba(255,236,236,0.05)
-    --red-6: rgba(255,243,243,0.2)
+    --red-4: rgba(235,184,235,0.5)   /* Adjusted opacity */
+    --red-5: rgba(244,215,241,0.15)
+    --red-5-5: rgba(249,231,244,0.05)
+    --red-6: rgba(255,247,247,0.2)
 
-    --color-archive-year: #999
-    --color-default: #999
+    --color-archive-year: #c9b0cc
+    --color-default: #c9b0cc        /* Light lavender gray */
     --color-border: var(--red-5)
-    --color-background: #21252b
-    --color-code-background: rgba(232,232,232,0.1)
-    --color-header-background: #222222
-    --color-footer-background: #21252b
-    --color-mobile-nav-background: #21252b
-    --color-wrap: #272b30
+    --color-background: #1f1720     /* Deep aubergine */
+    --color-code-background: rgba(40,35,41,0.5)
+    --color-header-background: #2a1f2c
+    --color-footer-background: #1f1720
+    --color-mobile-nav-background: #1f1720
+    --color-wrap: #2d222f
 
-    --color-h2-border: #47474a
-    --color-meta-shadow: rgba(0, 0, 0, 0.2)
-    --color-hover-shadow: rgba(0, 0, 0, 0.2)
+    --color-h2-border: #3d3440
+    --color-meta-shadow: rgba(25, 12, 27, 0.4)
+    --color-hover-shadow: rgba(25, 12, 27, 0.4)
 
-    --highlight-nav: #2e353f
-    --highlight-scrollbar: #454d59
-    --highlight-background: #22272e
-    --highlight-current-line: #393939
-    --highlight-selection: #515151
-    --highlight-foreground: #cccccc
-    --highlight-comment: #999999
-    --highlight-red: #f47067
-    --highlight-orange: #f69d50
-    --highlight-yellow: #ffcc66
-    --highlight-green: #99cc99
-    --highlight-aqua: #66cccc
-    --highlight-blue: #54b6ff
-    --highlight-purple: #dcbdfb
+    /* Dark Theme Highlights */
+    --highlight-nav: #38293d
+    --highlight-scrollbar: #4d3d52
+    --highlight-background: #1f1720
+    --highlight-current-line: #443548
+    --highlight-selection: #4d3d52
+    --highlight-foreground: #c9b0cc
+    --highlight-comment: #8c7a8f
+    --highlight-red: #ff6392;      /* Vibrant pink-red */
+    --highlight-orange: #ff8c63;   /* Coral */
+    --highlight-yellow: #ffd700;   /* Gold */
+    --highlight-green: #88cc88;    /* Soft mint */
+    --highlight-aqua: #63cccc;     /* Bright teal */
+    --highlight-blue: #7aa7ff;     /* Electric blue */
+    --highlight-purple: #b28cff;   /* Lavender */
     img
       filter: brightness(70%)
 
